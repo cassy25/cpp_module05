@@ -19,7 +19,7 @@ int main()
 
         form = intern.makeForm("shrubbery creation", "Ben");
         bureaucrat.executeForm(*form);
-        delete[] form;
+        delete form;
     } catch (const std::exception& mess)
     {
         std::cerr << "Exception " << mess.what() << std::endl << std::endl;
@@ -36,7 +36,7 @@ int main()
 
         form = intern.makeForm("robotomy request", "Ben");
         bureaucrat.executeForm(*form);
-        delete[] form;
+        delete form;
     } catch (const std::exception& mess)
     {
         std::cerr << "Exception " << mess.what() << std::endl << std::endl;
@@ -53,7 +53,7 @@ int main()
 
         form = intern.makeForm("presidential pardon", "Ben");
         bureaucrat.executeForm(*form);
-        delete[] form;
+        delete form;
     } catch (const std::exception& mess)
     {
         std::cerr << "Exception " << mess.what() << std::endl << std::endl;
@@ -70,7 +70,7 @@ int main()
 
         form = intern.makeForm("presidential pardon", "Ben");
         bureaucrat.executeForm(*form);
-        delete[] form;
+        delete form;
     } catch (const std::exception& mess)
     {
         std::cerr << "Exception " << mess.what() << std::endl << std::endl;
@@ -86,7 +86,7 @@ int main()
         AForm *form;
 
         form = intern.makeForm("pardon", "Ben");
-        delete[] form;
+        delete form;
     } catch (const std::exception& mess)
     {
         std::cerr << "Exception " << mess.what() << std::endl << std::endl;
